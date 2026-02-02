@@ -1,0 +1,97 @@
+
+import { Book, Devotional } from './types';
+
+export const BIBLE_BOOKS: Book[] = [
+  // Old Testament (Palaya Yerpaadu)
+  { id: 'gen', nameEn: 'Genesis', nameTa: 'ஆதியாகமம்', testament: 'Old', chapters: 50 },
+  { id: 'exo', nameEn: 'Exodus', nameTa: 'யாத்திராகமம்', testament: 'Old', chapters: 40 },
+  { id: 'lev', nameEn: 'Leviticus', nameTa: 'லேவியராகமம்', testament: 'Old', chapters: 27 },
+  { id: 'num', nameEn: 'Numbers', nameTa: 'எண்ணாகமம்', testament: 'Old', chapters: 36 },
+  { id: 'deu', nameEn: 'Deuteronomy', nameTa: 'உபாகமம்', testament: 'Old', chapters: 34 },
+  { id: 'jos', nameEn: 'Joshua', nameTa: 'யோசுவா', testament: 'Old', chapters: 24 },
+  { id: 'jud', nameEn: 'Judges', nameTa: 'நியாயாதிபதிகள்', testament: 'Old', chapters: 21 },
+  { id: 'rut', nameEn: 'Ruth', nameTa: 'ரூத்', testament: 'Old', chapters: 4 },
+  { id: '1sa', nameEn: '1 Samuel', nameTa: '1 சாமுவேல்', testament: 'Old', chapters: 31 },
+  { id: '2sa', nameEn: '2 Samuel', nameTa: '2 சாமுவேல்', testament: 'Old', chapters: 24 },
+  { id: '1ki', nameEn: '1 Kings', nameTa: '1 இராஜாக்கள்', testament: 'Old', chapters: 22 },
+  { id: '2ki', nameEn: '2 Kings', nameTa: '2 இராஜாக்கள்', testament: 'Old', chapters: 25 },
+  { id: '1ch', nameEn: '1 Chronicles', nameTa: '1 நாளாகமம்', testament: 'Old', chapters: 29 },
+  { id: '2ch', nameEn: '2 Chronicles', nameTa: '2 நாளாகமம்', testament: 'Old', chapters: 36 },
+  { id: 'ezr', nameEn: 'Ezra', nameTa: 'எஸ்றா', testament: 'Old', chapters: 10 },
+  { id: 'neh', nameEn: 'Nehemiah', nameTa: 'நெகேமியா', testament: 'Old', chapters: 13 },
+  { id: 'est', nameEn: 'Esther', nameTa: 'எஸ்தர்', testament: 'Old', chapters: 10 },
+  { id: 'job', nameEn: 'Job', nameTa: 'யோபு', testament: 'Old', chapters: 42 },
+  { id: 'psa', nameEn: 'Psalms', nameTa: 'சங்கீதம்', testament: 'Old', chapters: 150 },
+  { id: 'pro', nameEn: 'Proverbs', nameTa: 'நீதிமொழிகள்', testament: 'Old', chapters: 31 },
+  { id: 'ecc', nameEn: 'Ecclesiastes', nameTa: 'பிரசங்கி', testament: 'Old', chapters: 12 },
+  { id: 'sng', nameEn: 'Song of Solomon', nameTa: 'உன்னதப்பாட்டு', testament: 'Old', chapters: 8 },
+  { id: 'isa', nameEn: 'Isaiah', nameTa: 'ஏசாயா', testament: 'Old', chapters: 66 },
+  { id: 'jer', nameEn: 'Jeremiah', nameTa: 'எரேமியா', testament: 'Old', chapters: 52 },
+  { id: 'lam', nameEn: 'Lamentations', nameTa: 'புலம்பல்', testament: 'Old', chapters: 5 },
+  { id: 'eze', nameEn: 'Ezekiel', nameTa: 'எசேக்கியேல்', testament: 'Old', chapters: 48 },
+  { id: 'dan', nameEn: 'Daniel', nameTa: 'தானியேல்', testament: 'Old', chapters: 12 },
+  { id: 'hos', nameEn: 'Hosea', nameTa: 'ஓசியா', testament: 'Old', chapters: 14 },
+  { id: 'jol', nameEn: 'Joel', nameTa: 'யோவேல்', testament: 'Old', chapters: 3 },
+  { id: 'amo', nameEn: 'Amos', nameTa: 'ஆமோஸ்', testament: 'Old', chapters: 9 },
+  { id: 'oba', nameEn: 'Obadiah', nameTa: 'ஒபதியா', testament: 'Old', chapters: 1 },
+  { id: 'jon', nameEn: 'Jonah', nameTa: 'யோனா', testament: 'Old', chapters: 4 },
+  { id: 'mic', nameEn: 'Micah', nameTa: 'மீகா', testament: 'Old', chapters: 7 },
+  { id: 'nam', nameEn: 'Nahum', nameTa: 'நாகூம்', testament: 'Old', chapters: 3 },
+  { id: 'hab', nameEn: 'Habakkuk', nameTa: 'ஆபகூக்', testament: 'Old', chapters: 3 },
+  { id: 'zep', nameEn: 'Zephaniah', nameTa: 'செப்பனியா', testament: 'Old', chapters: 3 },
+  { id: 'hag', nameEn: 'Haggai', nameTa: 'ஆகாய்', testament: 'Old', chapters: 2 },
+  { id: 'zec', nameEn: 'Zechariah', nameTa: 'சகரியா', testament: 'Old', chapters: 14 },
+  { id: 'mal', nameEn: 'Malachi', nameTa: 'மல்கியா', testament: 'Old', chapters: 4 },
+
+  // New Testament (Puthiya Yerpaadu)
+  { id: 'mat', nameEn: 'Matthew', nameTa: 'மத்தேயு', testament: 'New', chapters: 28 },
+  { id: 'mar', nameEn: 'Mark', nameTa: 'மாற்கு', testament: 'New', chapters: 16 },
+  { id: 'luk', nameEn: 'Luke', nameTa: 'லூக்கா', testament: 'New', chapters: 24 },
+  { id: 'joh', nameEn: 'John', nameTa: 'யோவான்', testament: 'New', chapters: 21 },
+  { id: 'act', nameEn: 'Acts', nameTa: 'அப்போஸ்தலர்', testament: 'New', chapters: 28 },
+  { id: 'rom', nameEn: 'Romans', nameTa: 'ரோமர்', testament: 'New', chapters: 16 },
+  { id: '1co', nameEn: '1 Corinthians', nameTa: '1 கொரிந்தியர்', testament: 'New', chapters: 16 },
+  { id: '2co', nameEn: '2 Corinthians', nameTa: '2 கொரிந்தியர்', testament: 'New', chapters: 13 },
+  { id: 'gal', nameEn: 'Galatians', nameTa: 'கலாத்தியர்', testament: 'New', chapters: 6 },
+  { id: 'eph', nameEn: 'Ephesians', nameTa: 'எபேசியர்', testament: 'New', chapters: 6 },
+  { id: 'phi', nameEn: 'Philippians', nameTa: 'பிலிப்பியர்', testament: 'New', chapters: 4 },
+  { id: 'col', nameEn: 'Colossians', nameTa: 'கொலோசெயர்', testament: 'New', chapters: 4 },
+  { id: '1th', nameEn: '1 Thessalonians', nameTa: '1 தெசலோனிக்கேயர்', testament: 'New', chapters: 5 },
+  { id: '2th', nameEn: '2 Thessalonians', nameTa: '2 தெசலோனிக்கேயர்', testament: 'New', chapters: 3 },
+  { id: '1ti', nameEn: '1 Timothy', nameTa: '1 தீமோத்தேயு', testament: 'New', chapters: 6 },
+  { id: '2ti', nameEn: '2 Timothy', nameTa: '2 தீமோத்தேயு', testament: 'New', chapters: 4 },
+  { id: 'tit', nameEn: 'Titus', nameTa: 'தீத்து', testament: 'New', chapters: 3 },
+  { id: 'phm', nameEn: 'Philemon', nameTa: 'பிலேமோன்', testament: 'New', chapters: 1 },
+  { id: 'heb', nameEn: 'Hebrews', nameTa: 'எபிரெயர்', testament: 'New', chapters: 13 },
+  { id: 'jam', nameEn: 'James', nameTa: 'யாக்கோபு', testament: 'New', chapters: 5 },
+  { id: '1pe', nameEn: '1 Peter', nameTa: '1 பேதுரு', testament: 'New', chapters: 5 },
+  { id: '2pe', nameEn: '2 Peter', nameTa: '2 பேதுரு', testament: 'New', chapters: 3 },
+  { id: '1jo', nameEn: '1 John', nameTa: '1 யோவான்', testament: 'New', chapters: 5 },
+  { id: '2jo', nameEn: '2 John', nameTa: '2 யோவான்', testament: 'New', chapters: 1 },
+  { id: '3jo', nameEn: '3 John', nameTa: '3 யோவான்', testament: 'New', chapters: 1 },
+  { id: 'jud', nameEn: 'Jude', nameTa: 'யூதா', testament: 'New', chapters: 1 },
+  { id: 'rev', nameEn: 'Revelation', nameTa: 'வெளிப்படுத்தின விசேஷம்', testament: 'New', chapters: 22 },
+];
+
+export const INITIAL_DEVOTIONAL: Devotional = {
+  date: new Date().toLocaleDateString(),
+  verseRef: 'John 3:16',
+  verseText: 'For God so loved the world that He gave His only begotten Son...',
+  title: 'Infinite Love',
+  content: 'Today we reflect on the boundless nature of God\'s love. Just as the CSI liturgy reminds us, His grace is sufficient for all our needs.',
+  prayer: 'Heavenly Father, help us walk in Your love today. Amen.'
+};
+
+export const MOCK_VERSES = [
+  { number: 1, text: "In the beginning God created the heaven and the earth.", isRedLetter: false },
+  { number: 2, text: "And the earth was without form, and void; and darkness was upon the face of the deep.", isRedLetter: false },
+  { number: 3, text: "And God said, Let there be light: and there was light.", isRedLetter: false },
+  { number: 4, text: "And God saw the light, that it was good: and God divided the light from the darkness.", isRedLetter: false },
+  { number: 5, text: "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day.", isRedLetter: false },
+];
+
+export const MOCK_TAMIL_VERSES = [
+  { number: 1, text: "ஆதியிலே தேவன் வானத்தையும் பூமியையும் சிருஷ்டித்தார்.", isRedLetter: false },
+  { number: 2, text: "பூமியானது ஒழுங்கின்மையும் வெறுமையுமாய் இருந்தது; ஆழத்தின்மேல் இருள் இருந்தது; தேவ ஆவியானவர் ஜலத்தின்மேல் அசைவாடிக்கொண்டிருந்தார்.", isRedLetter: false },
+  { number: 3, text: "வெளிச்சம் உண்டாகக்கடவது என்றார், அப்பொழுது வெளிச்சம் உண்டாயிற்று.", isRedLetter: false },
+];

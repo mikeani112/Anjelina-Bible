@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Angelina’s Bible",
+  "description": "A modern, serene CSI Holy Bible companion for daily devotion, scripture reading in Tamil and English, and prayer tracking.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
